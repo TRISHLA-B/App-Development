@@ -1,0 +1,148 @@
+/* App container */
+.App {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Section containers */
+  .project-list,
+  .task-list,
+  .employee-list,
+  .employee-tasks-page,
+  .details-table {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0; /* Adjust margin for spacing between containers */
+    background-color: #1b1616;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); width: 100%; /* Full width on smaller screens */
+    width: 70vw; /* Set width to 100% of viewport width */
+  }
+  
+  /* Headings */
+  .project-list h2,
+  .task-list h2,
+  .employee-list h2,
+  .employee-tasks-page h2,
+  .details-table h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Lists */
+  .project-list ul,
+  .task-list ul,
+  .employee-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list ul li,
+  .task-list ul li,
+  .employee-list ul li {
+    margin: 5px 0;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .App {
+      padding: 10px; /* Adjust padding for medium screens */
+    }
+  }
+  
+  /* Additional media query for smaller screens */
+  @media (max-width: 576px) {
+    
+    .project-list,
+    .task-list,
+    .employee-list,
+    .employee-tasks-page,
+    .details-table {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  
+  @media (max-width: 100px) {
+    
+    .App {
+      padding: 5px; /* Example: Reduce padding */
+    }
+  
+    .project-list,
+    .task-list,
+    .employee-list,
+    .employee-tasks-page,
+    .details-table {
+      padding: 5px; /* Example: Reduce padding */
+      font-size: 0.8rem; /* Example: Reduce font size */
+    }
+  
+    
+  }
+  @media (max-width: 90px) {
+    /* Adjust styles for screens with a maximum width of 90px */
+    /* You can add your specific styles here */
+    .App {
+      padding: 3px; /* Example: Reduce padding */
+    }
+  
+    .project-list,
+    .task-list,
+    .employee-list,
+    .employee-tasks-page,
+    .details-table {
+      padding: 3px; /* Example: Reduce padding */
+      font-size: 0.8rem; /* Example: Reduce font size */
+    }
+  
+    /* You can further customize styles as needed for screens below 90px width */
+  }
+  
