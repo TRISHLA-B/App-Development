@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: authenticate-server
+          uri: lb://authenticate-server
+          predicates:
+            - Path=/auth/**
+                        
+        - id: projectss-server
+          uri: lb://projectss-server
+          predicates:
+            - Path=/project/**
+        
+        - id: attendance-server
+          uri: lb://attendance-server
+          predicates:
+            - Path=/attendance/**
+            
+            
+         
